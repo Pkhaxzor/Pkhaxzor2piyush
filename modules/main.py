@@ -122,6 +122,12 @@ async def account_login(bot: Client, m: Message):
         thumb = "thumb.jpg"
     else:
         thumb == "no"
+        
+         await editable.edit("**HIGHLIGHT NAME **")
+    input1: Message = await bot.listen(editable.chat.id)
+    raw_text7 = input7.text
+    await input1.delete(True)
+    
 
     if len(links) == 1:
         count = 1
