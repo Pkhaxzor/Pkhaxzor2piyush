@@ -123,12 +123,6 @@ async def account_login(bot: Client, m: Message):
     else:
         thumb == "no"
         
-         await editable.edit("**HIGHLIGHT NAME **")
-    input1: Message = await bot.listen(editable.chat.id)
-    raw_text7 = input7.text
-    await input1.delete(True)
-    
-
     if len(links) == 1:
         count = 1
     else:
@@ -168,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text7}'
-                cc1 = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**Batch »** {raw_text0}\n\**Download by »**{raw_text7}'
+                cc = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**Batch »** {raw_text0}\n\n Download by » PIYUSH 🇮🇳'
+                cc1 = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**Batch »** {raw_text0}\n\ Download by » PIYUSH 🇮🇳'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
