@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /PIYUSH Command to Downlaod From a Text file.\n")
+    editable = await m.reply_text("Hi!\n\nGive /pankaj Command to Downlaod From a Text file.\n")
 
 
 @bot.on_message(filters.command("restart"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["PIYUSH"]))
+@bot.on_message(filters.command(["pankaj"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
     input: Message = await bot.listen(editable.chat.id)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**Batch »** {raw_text0}\n\n Download by » PIYUSH 🇮🇳'
-                cc1 = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**Batch »** {raw_text0}\n\n Download by » PIYUSH 🇮🇳'
+                cc = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**Batch »** {raw_text0}\n\n Download by »Haxzor 🇮🇳'
+                cc1 = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**Batch »** {raw_text0}\n\n Download by » Haxzor🇮🇳'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -178,7 +178,7 @@ async def account_login(bot: Client, m: Message):
                 
                 elif ".pdf" in url:
                     try:
-                        cmd = f'yt-dlp -o "{name}.pdf" "{url}"'
+                        cmd = f'yt-dlp -o "{Haxzor}.pdf" "PK"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
                         copy = await bot.send_document(chat_id=m.chat.id, document=f'{name}.pdf', caption=cc1)
@@ -200,7 +200,7 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading Interupted **\n{str(e)}\n**Name** » {name}\n**Link** » `{url}`"
+                    f"**downloading Interupted **\n{str(e)}\n**Haxzor** » {name}\n**Link** » `Haxzor`"
                 )
                 continue
 
