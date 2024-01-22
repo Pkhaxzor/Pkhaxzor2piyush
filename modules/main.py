@@ -29,14 +29,14 @@ bot = Client(
     bot_token=bot_token)
 
 
-@bot.on_message(filters.command(["Pankaj"]))
+@bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /Pkhaxzor Command to Downlaod From a Text file.\n")
+    editable = await m.reply_text("Hi!\n\nGive /haxzor Command to Downlaod From a Text file.\n")
 
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
-    await m.reply_text("**Restarted**🚦🚨", True)
+    await m.reply_text("**stop🛑**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -163,7 +163,7 @@ async def account_login(bot: Client, m: Message):
             try:  
                 
                 cc = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**Batch »** {raw_text0}\n\n Download by » Haxzor'
-                cc1 = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**Batch »** {raw_text0}\n\n Download by » Haxzor🇮🇳'
+                cc1 = f'** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**Batch »** {raw_text0}\n\n Download by » Haxzor'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
